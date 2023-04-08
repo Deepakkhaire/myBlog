@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">MyBlog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./blog.html">Blogs</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">About</a>
+            </li>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html ">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <h1 class=" p-2 my-4 text-primary">You Can Create Your Own Blog Here.!!</h1>
+    <div class="container ">
+        <div class="row ">
+            <div class="bg-primary col-md-8 offset-md-2 text-center">
+            <form id="formData">
+                <div class="form-group mt-4 text-left">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Title of the Blog">
+                    <div class="form-group mt-4">
+                    <label for="content">Content</label>
+                    <textarea class="form-control" placeholder="Content of the Blog" id="content" rows="6"></textarea>
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                    <label for="image">Image</label>
+                    <input type="text" class="form-control" placeholder="Please Paste the url of an Image" id="image"></input>
+                    <div class="text-right blog-margin mt-4">
+                    <button type="submit" id="SubmitBtn" class="btn btn-warning">Submit</button>
+                    </div>
+                </div>
+                </div>
+              </form>
+                <div id="blogContainer" class="showData"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/blogs.js"></script>
+</body>
+</html>
