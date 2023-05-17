@@ -1,14 +1,42 @@
-* {
+* ,ul{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.bg-color{
+    background-color: yellowgreen;
 }
 
 .carousel-img img {
     height: 90vh;
     object-fit: fill;
 }
-
+.logo a{
+    color: red;
+    font-size: 36px;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+}
+.navbar{
+   display: flex;
+   background: #000;
+}
+.navbar img{
+    height: 65px;
+}
+.menu li{
+    display: inline;
+}
+.menu li a{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.menu li a:hover{
+    color: yellowgreen;
+}
 .bg-gray {
     background: rgba(243, 245, 246, 0.998);
 }
@@ -28,34 +56,24 @@
 }
 
 .event-details h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     margin-top: 40px;
     font-size: 36px;
-    color: #006a4d;
+    color: #0d8113;
     font-weight: 600;
 }
 
-.event-details p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.event-details h2 {
-    font-size: 20px;
-    color: #006a4d;
-    font-weight: 400;
-}
-
-.event-details img {
-    margin: 40px 0 110px;
-}
-
-.data {
+.data{
     margin: 0 65px 0 0;
+}
+.data p{
+    font-family: 'Playfair Display', serif;
 }
 
 .bg-speaker {
-    background: #bababa;
-    padding: 90px 40px 80px 50px;
+    font-family: 'Lobster', cursive;
+    padding: 90px 0 0 0;
 }
 
 .speakers>div {
@@ -67,7 +85,6 @@
 
 .speakers div:first-child {
     margin:0 0 40px;
-
 }
 
 .speakers h1 {
@@ -78,11 +95,16 @@
 .speakers p {
     font-size: 14px;
 }
-.form-header{
-    margin: 250px 0 20px;
+.speakers img{
+    width: 150px;
+    border-radius: 50px;
 }
 .form-group{
     margin: 20px 0;
+}
+.form-group label{
+    font-size: 20px;
+    font-weight: bold;
 }
 .footer {
     display: flex;
@@ -90,7 +112,7 @@
     align-items: center;
     background: #3c3c3c;
     font-family: 'Open Sans', sans-serif;
-    margin: 40px 0 0;
+    margin: 40px 0 0px;
 }
 
 .footer h1 {
@@ -101,14 +123,24 @@
     align-items: center;
     margin: 20px;
 }
-
+.blogHeader{
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    color: #0d8113;
+    text-align: center;
+}
+.bg-orange{
+    background-color: orange;
+}
 .footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 5px;
 }
 
 .footer-icons i {
+    margin: 0 10px;
     border: 2px solid #f8efef;
     border-radius: 50%;
     padding: 5px 5px;

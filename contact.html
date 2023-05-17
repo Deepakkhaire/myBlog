@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4a8aa55bd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="javascript:;"><img src="./assets/images/ADlogo.png" alt="">Blogs</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="#.">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-6 offset-3 bg-color">
+                    <h1 class="form-header text-center mt-2">Contact Us</h1>
+                    <form class="" onsubmit="sendEmail(); reset(); return false;">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Please Enter Your Name ">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email" class="form-control" placeholder="Please Enter Your Email ID">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="txtarea" class="form-control" placeholder="Please Enter Your Message" rows="10"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark mb-4" id="subBtn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+       function sendEmail(){
+        Email.send({
+            SecureToken :"6bf9dac9-bc87-4b4c-a760-769608266117",
+            To: 'dkhaire54@gmail.com',
+            From: "dkhaire69@gmail.com",
+            Subject: "New Contact Form Enquary",
+            Body: "<h4>Name :"+document.getElementById("name").value + "<br>"+
+            " Email : " + document.getElementById("email").value + "<br>"+
+            " Message : "+ document.getElementById("txtarea").value +"</h4>"
+        }).then(
+            message => alert("Thank you... We will Get You Soon !!")
+        );
+       }
+    </script>
+</body>
+
+</html>
