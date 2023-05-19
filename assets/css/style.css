@@ -6,7 +6,6 @@
 .bg-color{
     background-color: yellowgreen;
 }
-
 .carousel-img img {
     height: 90vh;
     object-fit: fill;
@@ -34,17 +33,20 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .menu li a:hover{
     color: yellowgreen;
 }
 .bg-gray {
     background: rgba(243, 245, 246, 0.998);
 }
-
-.blog-margin {
-    margin-bottom: 2.5rem;
+.blog-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
-
+.blog-para p{
+    font-family: 'Playfair Display', serif;
+}
 .showData {
     display: flex;
     flex-direction: column-reverse;
