@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .bg-color{
-    background-color: yellowgreen;
+    background-color: #ededed;
 }
 .carousel-img img {
     height: 90vh;
@@ -36,6 +36,12 @@
 
 .menu li a:hover{
     color: yellowgreen;
+}
+.menu li .active{
+    color: yellowgreen;
+}
+.carousel-img img{
+    object-fit: cover;
 }
 .bg-gray {
     background: rgba(243, 245, 246, 0.998);
@@ -73,30 +79,13 @@
     font-family: 'Playfair Display', serif;
 }
 
-.bg-speaker {
-    font-family: 'Lobster', cursive;
-    padding: 90px 0 0 0;
-}
-
-.speakers>div {
-    float: left;
-    width: 156px;
-    margin: 0 0 0 130px;
-    text-align: center;
-}
-
-.speakers div:first-child {
-    margin:0 0 40px;
-}
 
 .speakers h1 {
     font-size: 18px;
     font-weight: 400;
 }
 
-.speakers p {
-    font-size: 14px;
-}
+
 .speakers img{
     width: 150px;
     border-radius: 50px;
@@ -132,8 +121,9 @@
     text-align: center;
 }
 .bg-orange{
-    background-color: orange;
+    background-color: aliceblue
 }
+
 .footer-icons {
     display: flex;
     justify-content: center;
@@ -153,4 +143,9 @@
 .footer-icons p {
     color: #f8efef;
     font-size: 18px;
+}
+@media all and (max-width: 600px){
+    .navbar, .navbar img{
+        text-align: center;
+    }
 }

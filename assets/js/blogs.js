@@ -31,8 +31,8 @@ let blogs = [
     userId: 1,
     id: 5,
     url: "https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg",
-    title: "nesciunt quas odio",
-    body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+    title: "ChatGPT AI Technology",
+    body: "ChatGPT is a language model developed by OpenAI, based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to generate human-like responses to text inputs, making it capable of engaging in conversational interactions with users."
   }
 
 ]
@@ -55,7 +55,7 @@ const templating = (arr) => {
                 <h1>Title : ${ele.title}</h1>
             </div>
             <div class="card-footer">
-                <p>Content :${ele.body}</p>
+                <p><b>Content :</b> ${ele.body}</p>
             </div>
         </div>
         `;
